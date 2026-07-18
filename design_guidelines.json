@@ -1,0 +1,109 @@
+{
+  "theme": "Luxury Editorial Indian Wedding",
+  "archetype": "Editorial Romance (Pastel/Warm palette with Brutalist Swiss grid structure for tension)",
+  "instructions_to_main_agent": [
+    "Design a 2026 Awwwards Site-of-the-Day level wedding website.",
+    "Do not use standard SaaS templates. Embrace asymmetry, overlap, and editorial serpentine flows.",
+    "Ensure 'Lenis' is used for smooth momentum scrolling.",
+    "Use 'Framer Motion' for on-load masked text reveals and scroll-triggered micro-interactions.",
+    "Hero must feature a large kinetic text reveal (masked line-by-line) and a subtle parallax or 3D moment.",
+    "Treat photography like a fashion editorial—spotlight hover effects, clipped frames, and varying aspect ratios (tall portraits mixed with wide landscapes).",
+    "Include a global subtle film grain texture overlay to make it feel tactile.",
+    "RSVP button must open the Notion form link in a new tab: https://marble-beauty-7d8.notion.site/d80b8f568d5d4ad4a8003ebc23afeee2",
+    "Add a floating background music toggle (Play/Pause) fixed to the viewport.",
+    "Implement a guest well-wishes board connecting to a small backend."
+  ],
+  "typography": {
+    "headings": {
+      "font": "Cormorant Garamond",
+      "weights": ["light", "regular", "italic"],
+      "usage": "Massive sizes (text-6xl to text-[9vw] on desktop), tight tracking, mixed with italicized words for romantic tension.",
+      "classes": "font-serif tracking-tighter"
+    },
+    "body": {
+      "font": "Outfit",
+      "weights": ["light", "regular", "medium"],
+      "usage": "Clean geometric contrast against the ornate serif. Used for dates, times, UI labels, and small narrative text.",
+      "classes": "font-sans tracking-wide leading-relaxed"
+    }
+  },
+  "colors": {
+    "background": {
+      "primary": "#F7F5F0",
+      "secondary": "#EADDD7",
+      "dark_overlay": "rgba(26, 26, 26, 0.4)"
+    },
+    "foreground": {
+      "primary": "#1A1A1A",
+      "secondary": "#422B22",
+      "muted": "#7A6A63"
+    },
+    "accent": {
+      "jaipur_rose": "#8B3A3A",
+      "palace_green": "#1F3324",
+      "champagne": "#D4C5B9"
+    },
+    "rules": [
+      "Avoid pure white or pure black. Always tint neutrals with warmth.",
+      "Use 'Jaipur Rose' and 'Palace Green' sparingly for CTA hover states, thin borders, or small decorative text.",
+      "Text over images must use 'champagne' or 'primary background' with adequate contrast."
+    ]
+  },
+  "visual_enhancers": {
+    "grain_overlay": "A fixed full-screen div with pointer-events-none, mix-blend-multiply, opacity-20, and a noise background image.",
+    "borders": "1px solid #422B22 (Dark Umber) with 10% to 20% opacity for architectural grid lines.",
+    "corners": "Minimal border radius (max 4px). Sharp edges evoke high-fashion print layouts.",
+    "shadows": "Avoid soft drop shadows. Use hard flat shadows or purely rely on 1px borders for definition."
+  },
+  "layouts_and_grids": {
+    "hero": "Full viewport height. Split or overlapping layout. A massive arch-masked image or video of a Jaipur palace/couple. Massive 'Amy & Aman' text revealing line-by-line via Framer Motion mask on load. Fixed editorial countdown at the bottom edge.",
+    "our_story": "Numbered manifesto format ('01', '02', '03'). Left-aligned oversized numbers with a thin vertical tracking line connecting them. Text is right-aligned in a 12-column grid.",
+    "wedding_details": "Bento-style or Swiss architectural grid. Cards with p-8 or p-12 padding. 1px borders separating them. Data points (Venue, Dates, Location, Guest Count) styled as high-contrast minimalist metadata.",
+    "schedule": "A two-day vertical timeline (Dec 17 & 18). Asymmetrical staggering. Use 'Outfit' font for the times and 'Cormorant' for the event titles.",
+    "gallery": "Masonry or overlapping 'DOCU-Editorial' style. Images varying in size (e.g., col-span-2 row-span-3 mixed with col-span-4 row-span-2). Add a slow scrolling editorial marquee between the schedule and gallery.",
+    "guest_board": "A horizontal scrolling strip or a tight masonry grid of short messages fetched from the backend.",
+    "rsvp_section": "Massive typography 'We can't wait to celebrate with you.' with a large, pill-shaped or sharp-edged primary button pointing to the Notion link."
+  },
+  "motion_and_interactions": {
+    "scroll_engine": "Lenis (smooth momentum scroll).",
+    "text_reveal": "framer-motion: initial { y: '100%' }, animate { y: 0 } masked inside an overflow-hidden wrapper.",
+    "parallax": "Use framer-motion useScroll and useTransform for images moving slightly slower than the scroll speed.",
+    "hover_states": "Images scale up slightly (1.05) inside their clipped bounding box. Buttons feature a magnetic pull effect or an arrow that translates up and right.",
+    "marquee": "One very slow, continuous text ribbon reading 'JAIPUR, INDIA — DECEMBER 17 & 18, 2026 —' in large outline text."
+  },
+  "image_urls": {
+    "hero_palace": "https://images.pexels.com/photos/32261804/pexels-photo-32261804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "story_couple": "https://images.pexels.com/photos/17657612/pexels-photo-17657612.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "details_floral": "https://images.pexels.com/photos/931155/pexels-photo-931155.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "schedule_dinner": "https://images.pexels.com/photos/19269784/pexels-photo-19269784.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "gallery_1": "https://images.pexels.com/photos/34865618/pexels-photo-34865618.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "gallery_2": "https://images.pexels.com/photos/36106445/pexels-photo-36106445.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "gallery_3": "https://images.unsplash.com/photo-1519756719377-e084f8333a83?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODd8MHwxfHNlYXJjaHwyfHx3YXJtJTIwbGlnaHRzJTIwbmlnaHQlMjBkaW5uZXJ8ZW58MHx8fHwxNzg0MzY0MTc4fDA&ixlib=rb-4.1.0&q=85"
+  },
+  "components_to_build": [
+    "AnimatedHero (Masked text + Countdown + Parallax BG)",
+    "ManifestoStory (Numbered chapters with scroll progress line)",
+    "WeddingDetailsGrid (Swiss grid cards with thin borders)",
+    "ScheduleTimeline (Asymmetrical list)",
+    "EditorialGallery (Clipped images with hover scale)",
+    "ScrollingMarquee (Infinite text ribbon)",
+    "GuestWellWishesBoard (Connects to GET/POST /api/messages)",
+    "MusicToggle (Fixed bottom right)",
+    "RSVPSection (Large CTA -> external link)"
+  ],
+  "accessibility": {
+    "contrast": "Ensure the 'Cormorant' serif font is legible by maintaining minimum 4.5:1 ratio over the warm bone background.",
+    "motion": "Respect prefers-reduced-motion for all Framer Motion and Lenis scroll effects.",
+    "testing": "Add data-testid to RSVP button, music toggle, and well-wishes form submission."
+  },
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Do not converge toward generic outputs. Avoid 'AI slop' aesthetic.",
+    "Never apply universal transition: all.",
+    "Never center align the app container (.App { text-align: center; }).",
+    "Use 2-3x more spacing than typical. Use p-12 to p-24 for main sections.",
+    "Use Lucide icons (or Phosphor) for UI actions.",
+    "Do not use generic Shadcn components out of the box for the marketing sections. Use pure HTML/Tailwind for layout to preserve the editorial style.",
+    "Must use sonner for toasts.",
+    "Must use exact image URLs provided, no placeholders."
+  ]
+}
