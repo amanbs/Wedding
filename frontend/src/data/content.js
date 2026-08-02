@@ -92,7 +92,7 @@ export const SCHEDULE = [
     events: [
       { time: "10:00 AM", title: "Amy's send-off & Aman's Baraat", note: "The groom's procession arrives" },
       { time: "11:00 AM", title: "The Pheras", note: "Vows exchanged in the palace gardens" },
-      { time: "8:00 PM", title: "Reception & Feast", note: "Toasts, music and the first dance" },
+      { time: "7:00 PM", title: "The Party, After", note: "Toasts, music and the first dance" },
     ],
   },
 ];
