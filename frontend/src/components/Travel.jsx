@@ -82,11 +82,20 @@ export const Travel = () => {
                 <p className="mb-6 font-sans text-xs uppercase tracking-[0.3em] text-clay">
                   Notes for guests
                 </p>
-                <ul className="space-y-4">
+                <ul className="space-y-6">
                   {NOTES.map((n, i) => (
                     <li key={i} className="flex gap-4">
-                      <span className="font-serif text-xl italic text-rose">{`0${i + 1}`}</span>
-                      <span className="font-sans text-base font-light text-ink/75">{n}</span>
+                      <span className="shrink-0 font-serif text-xl italic text-rose">{`0${i + 1}`}</span>
+                      <div>
+                        {n.title && (
+                          <p className="font-sans text-sm font-medium uppercase tracking-[0.15em] text-ink">
+                            {n.title}
+                          </p>
+                        )}
+                        <p className={`font-sans text-base font-light text-ink/75 ${n.title ? "mt-1" : ""}`}>
+                          {n.text}
+                        </p>
+                      </div>
                     </li>
                   ))}
                 </ul>

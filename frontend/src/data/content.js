@@ -135,8 +135,20 @@ export const TRAVEL = [
 ];
 
 export const NOTES = [
-  "Please share your meal preference and contact details in the RSVP form.",
-  "Bringing a plus one or kids? Kindly mention it in your RSVP.",
-  "Dress code leans festive & pastel — think Jaipur palace elegance.",
-  "December evenings can be cool; a light layer is recommended.",
+  {
+    title: "",
+    text: "Indian weddings are less of a single event and more of a joyful marathon! Expect multiple celebrations — pace yourself, enjoy the downtime, and stay hydrated.",
+  },
+  {
+    title: "Dress Code",
+    text: "The dress code leans festive and pastel — think Jaipur palace elegance.",
+  },
+  {
+    title: "Weather",
+    text: "December evenings in Jaipur can be quite cool, so we recommend bringing a warm layer for the outdoor celebrations.",
+  },
+  {
+    title: "Get Ready to Plan",
+    text: "A logistics guide and moodboard will follow with the formal invitation.",
+  },
 ];
