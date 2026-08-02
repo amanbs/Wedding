@@ -6,7 +6,7 @@ const LINKS = [
   { label: "Story", id: "story" },
   { label: "Details", id: "details" },
   { label: "The Programme", id: "schedule" },
-  { label: "Gallery", id: "gallery" },
+  { label: "Moments", id: "gallery" },
   { label: "Travel", id: "travel" },
   { label: "Wishes", id: "wishes" },
 ];
