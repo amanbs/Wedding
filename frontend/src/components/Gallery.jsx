@@ -1,17 +1,14 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
-import { IMAGES } from "../data/content";
 import { Reveal } from "./motion/Reveal";
 
 const PHOTOS = [
-  { src: IMAGES.cover, span: "md:col-span-7 md:row-span-2", h: "h-[52vh] md:h-full" },
-  { src: IMAGES.gallery1, span: "md:col-span-5", h: "h-[40vh]" },
-  { src: IMAGES.detailsFloral, span: "md:col-span-5", h: "h-[46vh]" },
-  { src: IMAGES.gallery2, span: "md:col-span-4", h: "h-[40vh]" },
-  { src: IMAGES.scheduleDinner, span: "md:col-span-8", h: "h-[40vh]" },
-  { src: IMAGES.venueWedding, span: "md:col-span-6", h: "h-[46vh]" },
-  { src: IMAGES.gallery3, span: "md:col-span-6", h: "h-[46vh]" },
+  { src: "/moments/m2.jpg", span: "md:col-span-7", h: "h-[46vh] md:h-[62vh]" },
+  { src: "/moments/m4.jpg", span: "md:col-span-5", h: "h-[46vh] md:h-[62vh]" },
+  { src: "/moments/m3.jpg", span: "md:col-span-5", h: "h-[44vh]" },
+  { src: "/moments/m1.jpg", span: "md:col-span-7", h: "h-[44vh]" },
+  { src: "/moments/m5.jpg", span: "md:col-span-12", h: "h-[44vh] md:h-[60vh]" },
 ];
 
 export const Gallery = () => {
