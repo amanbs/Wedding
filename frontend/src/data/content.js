@@ -73,7 +73,7 @@ export const STORY = [
 
 export const DETAILS = [
   { label: "Location", value: "Jaipur, India", sub: "The Pink City of Rajasthan" },
-  { label: "Dates", value: "Dec 17 & 18", sub: "Two days of celebration, 2026" },
+  { label: "Dates", value: "Dec 17 & 18, 2026", sub: "Two days of celebration" },
   { label: "Venue", value: "Narain Niwas Palace", sub: "A heritage haveli in the heart of Jaipur" },
 ];
 
