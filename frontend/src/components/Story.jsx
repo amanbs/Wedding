@@ -55,19 +55,41 @@ export const Story = () => {
             </div>
           </div>
 
-          {/* Editorial portrait */}
+          {/* Editorial portraits */}
           <div className="md:col-span-5">
-            <div className="relative aspect-[3/2] overflow-hidden md:sticky md:top-28">
-              <motion.img
-                style={{ y: imgY, scale: 1.08 }}
-                src="/story-couple.jpg"
-                alt="Amy and Aman — the proposal"
-                className="h-full w-full object-cover"
-              />
-              <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-ink/50 to-transparent p-6">
-                <p className="font-serif text-xl italic text-ivory">
-                  "Together is a beautiful place to be."
-                </p>
+            <div className="space-y-6 md:sticky md:top-28">
+              <div className="relative aspect-[3/2] overflow-hidden">
+                <motion.img
+                  style={{ y: imgY, scale: 1.08 }}
+                  src="/story-couple.jpg"
+                  alt="Amy and Aman — the proposal"
+                  className="h-full w-full object-cover"
+                />
+                <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-ink/50 to-transparent p-6">
+                  <p className="font-serif text-xl italic text-ivory">
+                    "Together is a beautiful place to be."
+                  </p>
+                </div>
+              </div>
+              <div className="grid grid-cols-2 gap-6">
+                <Reveal>
+                  <div className="relative aspect-[3/2] overflow-hidden">
+                    <img
+                      src="/story-couple-2.jpg"
+                      alt="Amy and Aman sharing a moment"
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
+                </Reveal>
+                <Reveal delay={0.1}>
+                  <div className="relative aspect-[3/2] overflow-hidden">
+                    <img
+                      src="/story-couple-3.jpg"
+                      alt="Amy and Aman in the gardens"
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
+                </Reveal>
               </div>
             </div>
           </div>
