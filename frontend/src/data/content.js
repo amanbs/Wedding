@@ -81,7 +81,7 @@ export const SCHEDULE = [
   {
     day: "Day One",
     date: "December 17, 2026",
-    image: "/jaipur/jaipur-puppets.jpg",
+    image: "/jaipur/jaipur-door.jpg",
     caption: "Rajasthani kathputli — colour, craft & celebration",
     events: [
       { time: "12:00 PM", title: "Haldi & Mehendi", note: "A brunch with henna, courtyard music and turmeric" },
@@ -91,7 +91,7 @@ export const SCHEDULE = [
   {
     day: "Day Two",
     date: "December 18, 2026",
-    image: "/jaipur/jaipur-door.jpg",
+    image: "/jaipur/jaipur-puppets.jpg",
     caption: "The palace gates of Jaipur open to a new beginning",
     events: [
       { time: "10:00 AM", title: "Amy's send-off & Aman's Baraat", note: "The groom's procession arrives" },
