@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { COUPLE } from "../data/content";
-import { MaskLine } from "./motion/Reveal";
 
 export const RSVP = () => {
   return (
@@ -35,25 +34,6 @@ export const RSVP = () => {
             Please RSVP by September 24th, 2026
           </p>
         </motion.div>
-
-        <h2 className="font-serif font-light leading-[0.95] text-ivory">
-          <MaskLine className="text-5xl md:text-8xl">We can't wait</MaskLine>
-          <MaskLine delay={0.12} className="text-5xl italic text-champagne md:text-8xl">
-            to celebrate
-          </MaskLine>
-          <MaskLine delay={0.24} className="text-5xl md:text-8xl">with you.</MaskLine>
-        </h2>
-
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1, delay: 0.3 }}
-          className="mx-auto mt-10 max-w-xl font-sans text-base font-light leading-relaxed text-ivory/70"
-        >
-          Please share your details, meal preference, and whether you're bringing a plus one or
-          kids. Your response goes directly to our private RSVP responses.
-        </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}

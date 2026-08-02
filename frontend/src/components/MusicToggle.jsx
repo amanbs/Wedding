@@ -2,19 +2,38 @@ import { useRef, useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Music, Pause } from "lucide-react";
 
-// Floating ambient music toggle. Swap the src with your own track anytime.
-const TRACK = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3";
+// Floating background music toggle.
+const TRACK = "/audio/background.mp3";
 
 export const MusicToggle = () => {
   const audioRef = useRef(null);
+  const startedRef = useRef(false);
   const [playing, setPlaying] = useState(false);
 
   useEffect(() => {
     const a = new Audio(TRACK);
     a.loop = true;
-    a.volume = 0.35;
+    a.volume = 0.4;
     audioRef.current = a;
+
+    // Start on the guest's first interaction (browsers block autoplay before that)
+    const startOnGesture = () => {
+      if (startedRef.current) return;
+      a.play()
+        .then(() => {
+          startedRef.current = true;
+          setPlaying(true);
+          cleanup();
+        })
+        .catch(() => {});
+    };
+    const events = ["pointerdown", "keydown", "touchstart", "wheel"];
+    const cleanup = () =>
+      events.forEach((e) => window.removeEventListener(e, startOnGesture));
+    events.forEach((e) => window.addEventListener(e, startOnGesture, { once: false, passive: true }));
+
     return () => {
+      cleanup();
       a.pause();
     };
   }, []);
@@ -22,6 +41,7 @@ export const MusicToggle = () => {
   const toggle = () => {
     const a = audioRef.current;
     if (!a) return;
+    startedRef.current = true;
     if (playing) {
       a.pause();
       setPlaying(false);
