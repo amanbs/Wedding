@@ -26,7 +26,7 @@ export const Footer = () => {
             With love, from Jaipur
           </p>
           <p className="font-sans text-[0.65rem] uppercase tracking-[0.2em] text-ivory/40">
-            Planned by Nisha · Catering by Ajeez
+            Alok · Ritu · Anand · Abha · Avi
           </p>
         </div>
       </div>
