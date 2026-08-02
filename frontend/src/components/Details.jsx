@@ -62,7 +62,7 @@ export const Details = () => {
                 </p>
                 <p className="mt-6 max-w-xl font-sans text-base font-light leading-relaxed text-ink/60 md:text-lg">
                   In the meantime, we'll keep updating this space with useful information, travel
-                  tips, and everything you need to know as we get closer to the big day.
+                  tips, and everything you need to know as we get closer to the day.
                 </p>
               </div>
             </Reveal>
