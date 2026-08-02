@@ -41,9 +41,9 @@ export const STORY = [
     label: "How It Began",
     title: "A Match Lockdown-ed",
     paras: [
-      "Our story began on what was arguably the worst possible day to meet someone — the very first day of the COVID lockdown.",
+      "Our story began on what was arguably the worst possible day to meet someone, the very first day of the COVID lockdown.",
       "We were neighbours at the Cité Internationale Universitaire de Paris, both trying to survive the final stretch of our master's degrees.",
-      "Somewhere along the way, after one day of hanging out together, we simply… never stopped.",
+      "Somewhere along the way, after one day of hanging out together, we simply...never stopped.",
       "Since then, we've followed each other across cities, countries and continents (quite literally, in that order), proving that some things are just meant to find their way back.",
     ],
   },
@@ -63,8 +63,8 @@ export const STORY = [
     title: "One Big Roof. A Thousand Stories.",
     paras: [
       "If you know Amy, you'll know there was never going to be any destination other than Jaipur for the wedding.",
-      "If you know Aman… you'll know he couldn't care less. Luckily, celebrating in the city he grew up in turned out to be a pretty great compromise.",
-      "This weekend isn't just about the two of us. It's about every chapter that brought us here. To have all of you — our favourite people from every season of our lives — under one roof is something we'll never take for granted.",
+      "If you know Aman...you'll know he couldn't care less. Luckily, celebrating in the city he grew up in turned out to be a pretty great compromise.",
+      "This weekend isn't just about the two of us. It's about every chapter that brought us here. To have all of you, our favourite people from every season of our lives, under one roof is something we'll never take for granted.",
       "So, whether you're travelling across town or across continents, we hope you'll make the journey to celebrate with us. Come as you are, bring your stories, your dancing shoes, and your biggest smiles. We can't wait to introduce old friends to new ones, watch our worlds collide in the best possible way, and celebrate the beautiful, wonderfully diverse village that has shaped our lives.",
       "Thank you for making the trip. Having you there is what will make this celebration complete. We truly can't wait to welcome you to Jaipur.",
     ],
