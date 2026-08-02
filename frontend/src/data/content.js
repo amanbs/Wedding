@@ -94,8 +94,8 @@ export const SCHEDULE = [
     image: "/jaipur/jaipur-puppets.jpg",
     caption: "The palace gates of Jaipur open to a new beginning",
     events: [
-      { time: "10:00 AM", title: "Amy's send-off & Aman's Baraat", note: "The groom's procession arrives" },
-      { time: "11:00 AM", title: "The Pheras", note: "Vows exchanged in the palace gardens" },
+      { time: "11:30 AM", title: "Amy's send-off & Aman's Baraat", note: "The groom's procession arrives" },
+      { time: "12:00 PM", title: "The Pheras", note: "Vows exchanged in the palace gardens" },
       { time: "7:00 PM", title: "The Party, After", note: "Toasts, music and the first dance" },
     ],
   },
