@@ -80,11 +80,6 @@ export const Details = () => {
                   className="h-full w-full object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.06]"
                 />
                 <div className="absolute inset-0 bg-ink/0 transition-colors duration-500 group-hover:bg-ink/15" />
-                <div className="absolute bottom-0 left-0 p-5 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                  <span className="font-sans text-[0.65rem] uppercase tracking-[0.3em] text-ivory">
-                    {a.label}
-                  </span>
-                </div>
               </div>
             </Reveal>
           ))}
