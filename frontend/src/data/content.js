@@ -81,7 +81,7 @@ export const SCHEDULE = [
   {
     day: "Day One",
     date: "December 17, 2026",
-    image: "/jaipur/jaipur-door.jpg",
+    image: "/jaipur/jaipur-peacock.jpg",
     caption: "Rajasthani kathputli — colour, craft & celebration",
     events: [
       { time: "12:00 PM", title: "Haldi & Mehendi", note: "A brunch with henna, courtyard music and turmeric" },
