@@ -36,11 +36,7 @@ export const Schedule = () => {
                 </div>
               </Reveal>
 
-              <Reveal delay={0.05}>
-                <p className="mb-8 font-serif text-lg italic text-clay">{day.caption}</p>
-              </Reveal>
-
-              <div className="space-y-10">
+              <div className="mt-10 space-y-10">
                 {day.events.map((e, ei) => (
                   <Reveal key={e.title} delay={ei * 0.08}>
                     <div className="flex gap-8">
