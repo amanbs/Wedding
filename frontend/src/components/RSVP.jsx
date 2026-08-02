@@ -6,7 +6,13 @@ import { MaskLine } from "./motion/Reveal";
 export const RSVP = () => {
   return (
     <section id="rsvp" className="relative overflow-hidden bg-palace px-6 py-28 md:px-12 md:py-44">
-      <div className="mx-auto max-w-[1600px] text-center">
+      {/* Vintage Jaipur State postage stamp — decorative */}
+      <img
+        src="/jaipur/jaipur-stamp.jpg"
+        alt="Vintage Jaipur State peacock postage stamp"
+        className="pointer-events-none absolute -right-4 top-10 z-0 w-24 -rotate-12 border-2 border-ivory opacity-90 shadow-[0_10px_30px_rgba(0,0,0,0.4)] md:right-12 md:top-16 md:w-32 lg:w-36"
+      />
+      <div className="relative z-10 mx-auto max-w-[1600px] text-center">
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

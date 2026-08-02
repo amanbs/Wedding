@@ -1,4 +1,5 @@
-import { TRAVEL, NOTES, IMAGES } from "../data/content";
+import { TRAVEL, NOTES } from "../data/content";
+import { ExternalLink } from "lucide-react";
 import { Reveal } from "./motion/Reveal";
 
 export const Travel = () => {
@@ -16,24 +17,64 @@ export const Travel = () => {
               </div>
             </Reveal>
             <Reveal delay={0.1}>
-              <div className="relative h-[52vh] overflow-hidden lg:sticky lg:top-28">
-                <img
-                  src={IMAGES.venueHaveli}
-                  alt="Narain Niwas heritage haveli"
-                  className="h-full w-full object-cover"
-                />
-                <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-ink/60 to-transparent p-6">
-                  <p className="font-sans text-[0.65rem] uppercase tracking-[0.3em] text-ivory/70">
-                    The Venue
-                  </p>
-                  <p className="font-serif text-3xl text-ivory">Narain Niwas</p>
+              <div className="lg:sticky lg:top-28">
+                <a
+                  href="https://www.cntraveller.in/sponsored/story/at-narain-niwas-palace-jaipur-slows-to-a-soulful-pace/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="venue-article-link"
+                  className="group relative block aspect-[3/4] overflow-hidden"
+                >
+                  <img
+                    src="/jaipur/narain-tea.jpg"
+                    alt="Bar Palladio veranda at Narain Niwas Palace, Jaipur"
+                    className="h-full w-full object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.04]"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ink/60 via-transparent to-ink/10" />
+                  <div className="absolute bottom-0 left-0 flex w-full items-end justify-between p-6">
+                    <div>
+                      <p className="font-sans text-[0.65rem] uppercase tracking-[0.3em] text-ivory/70">
+                        The Venue
+                      </p>
+                      <p className="font-serif text-3xl text-ivory">Narain Niwas Palace</p>
+                    </div>
+                    <span className="flex items-center gap-1.5 font-sans text-[0.6rem] uppercase tracking-[0.2em] text-ivory/80 transition-colors group-hover:text-ivory">
+                      Read <ExternalLink size={13} />
+                    </span>
+                  </div>
+                  {/* Vintage Jaipur State postage stamp — decorative */}
+                  <img
+                    src="/jaipur/jaipur-stamp.jpg"
+                    alt="Vintage Jaipur State peacock postage stamp"
+                    className="pointer-events-none absolute right-4 top-4 z-10 w-24 rotate-6 border-2 border-ivory shadow-[0_10px_30px_rgba(26,26,26,0.35)] transition-transform duration-700 group-hover:rotate-0 md:w-28"
+                  />
+                </a>
+                <div className="mt-4 grid grid-cols-2 gap-4">
+                  <a
+                    href="https://www.cntraveller.in/sponsored/story/at-narain-niwas-palace-jaipur-slows-to-a-soulful-pace/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group relative block aspect-[4/3] overflow-hidden"
+                  >
+                    <img
+                      src="/jaipur/narain-veranda.jpg"
+                      alt="Ivy-clad veranda at Narain Niwas Palace"
+                      className="h-full w-full object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.05]"
+                    />
+                  </a>
+                  <a
+                    href="https://www.cntraveller.in/sponsored/story/at-narain-niwas-palace-jaipur-slows-to-a-soulful-pace/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group relative block aspect-[4/3] overflow-hidden"
+                  >
+                    <img
+                      src="/jaipur/narain-facade.jpg"
+                      alt="The facade of Narain Niwas Palace"
+                      className="h-full w-full object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.05]"
+                    />
+                  </a>
                 </div>
-                {/* Vintage Jaipur State postage stamp — decorative */}
-                <img
-                  src="/jaipur/jaipur-stamp.jpg"
-                  alt="Vintage Jaipur State peacock postage stamp"
-                  className="pointer-events-none absolute right-4 top-4 z-10 w-24 rotate-6 border-2 border-ivory shadow-[0_10px_30px_rgba(26,26,26,0.35)] transition-transform duration-700 hover:rotate-0 md:w-28 xl:w-32"
-                />
               </div>
             </Reveal>
           </div>
