@@ -23,11 +23,11 @@ export const Travel = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   data-testid="venue-article-link"
-                  className="group relative block aspect-[3/4] overflow-hidden"
+                  className="group relative block aspect-[4/3] overflow-hidden"
                 >
                   <img
-                    src="/jaipur/narain-tea.jpg"
-                    alt="Bar Palladio veranda at Narain Niwas Palace, Jaipur"
+                    src="/jaipur/narain-facade.jpg"
+                    alt="The facade of Narain Niwas Palace, Jaipur"
                     className="h-full w-full object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.04]"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-ink/60 via-transparent to-ink/10" />
@@ -42,12 +42,6 @@ export const Travel = () => {
                       Read <ExternalLink size={13} />
                     </span>
                   </div>
-                  {/* Vintage Jaipur State postage stamp — decorative */}
-                  <img
-                    src="/jaipur/jaipur-stamp.jpg"
-                    alt="Vintage Jaipur State peacock postage stamp"
-                    className="pointer-events-none absolute right-4 top-4 z-10 w-24 rotate-6 border-2 border-ivory shadow-[0_10px_30px_rgba(26,26,26,0.35)] transition-transform duration-700 group-hover:rotate-0 md:w-28"
-                  />
                 </a>
                 <div className="mt-4 grid grid-cols-2 gap-4">
                   <a
@@ -57,8 +51,8 @@ export const Travel = () => {
                     className="group relative block aspect-[4/3] overflow-hidden"
                   >
                     <img
-                      src="/jaipur/narain-veranda.jpg"
-                      alt="Ivy-clad veranda at Narain Niwas Palace"
+                      src="/jaipur/narain-tea.jpg"
+                      alt="Bar Palladio veranda at Narain Niwas Palace"
                       className="h-full w-full object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.05]"
                     />
                   </a>
@@ -69,8 +63,8 @@ export const Travel = () => {
                     className="group relative block aspect-[4/3] overflow-hidden"
                   >
                     <img
-                      src="/jaipur/narain-facade.jpg"
-                      alt="The facade of Narain Niwas Palace"
+                      src="/jaipur/narain-veranda.jpg"
+                      alt="Ivy-clad veranda at Narain Niwas Palace"
                       className="h-full w-full object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.05]"
                     />
                   </a>
