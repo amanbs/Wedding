@@ -18,16 +18,11 @@ export const Gallery = () => {
     <section id="gallery" className="relative bg-sand px-6 py-24 md:px-12 md:py-40">
       <div className="mx-auto max-w-[1600px]">
         <Reveal>
-          <div className="mb-16 flex flex-col justify-between gap-4 md:flex-row md:items-end">
-            <div className="flex items-center gap-4">
-              <span className="h-px w-12 bg-rose" />
-              <span className="font-sans text-xs uppercase tracking-[0.35em] text-rose">
-                Moments
-              </span>
-            </div>
-            <p className="max-w-sm font-serif text-2xl font-light italic text-ink/70">
-              Pastel florals, palace charm & a weekend of memories.
-            </p>
+          <div className="mb-16 flex items-center gap-4">
+            <span className="h-px w-12 bg-rose" />
+            <span className="font-sans text-xs uppercase tracking-[0.35em] text-rose">
+              Moments
+            </span>
           </div>
         </Reveal>
 
