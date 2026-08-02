@@ -6,7 +6,7 @@ export const Travel = () => {
     <section id="travel" className="relative bg-ivory px-6 py-24 md:px-12 md:py-40">
       <div className="mx-auto max-w-[1600px]">
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-12 lg:gap-24">
-          <div className="lg:col-span-5">
+          <div className="relative lg:col-span-5">
             <Reveal>
               <div className="mb-10 flex items-center gap-4">
                 <span className="h-px w-12 bg-rose" />
@@ -28,6 +28,12 @@ export const Travel = () => {
                   </p>
                   <p className="font-serif text-3xl text-ivory">Narain Niwas</p>
                 </div>
+                {/* Vintage Jaipur State postage stamp — decorative */}
+                <img
+                  src="/jaipur/jaipur-stamp.jpg"
+                  alt="Vintage Jaipur State peacock postage stamp"
+                  className="pointer-events-none absolute right-4 top-4 z-10 w-24 rotate-6 border-2 border-ivory shadow-[0_10px_30px_rgba(26,26,26,0.35)] transition-transform duration-700 hover:rotate-0 md:w-28 xl:w-32"
+                />
               </div>
             </Reveal>
           </div>
