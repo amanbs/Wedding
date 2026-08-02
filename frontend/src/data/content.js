@@ -75,9 +75,6 @@ export const DETAILS = [
   { label: "Venue", value: "Narain Niwas", sub: "A heritage haveli in the heart of Jaipur" },
   { label: "Dates", value: "Dec 17 & 18", sub: "Two days of celebration, 2026" },
   { label: "Location", value: "Jaipur, India", sub: "The Pink City of Rajasthan" },
-  { label: "The Evening", value: "350 Guests", sub: "Family, friends & forever" },
-  { label: "Catering", value: "By Ajeez", sub: "A feast for every palate" },
-  { label: "Planned by", value: "Nisha", sub: "Every detail, with love" },
 ];
 
 export const SCHEDULE = [
