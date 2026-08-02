@@ -23,64 +23,62 @@ export const Hero = () => {
 
   return (
     <section ref={ref} className="relative min-h-[100svh] w-full overflow-hidden bg-ivory">
-      {/* Parallax square watercolor frame */}
-      <motion.div
-        style={{ y: imgY, scale }}
-        className="pointer-events-none absolute right-0 top-1/2 z-0 hidden -translate-y-1/2 pr-6 md:block md:w-[48%] lg:pr-12"
-      >
-        <div className="relative mx-auto aspect-square w-full max-w-[620px] overflow-hidden border border-ink/15 bg-ivory shadow-[0_1px_0_rgba(66,43,34,0.15)]">
-          <img
-            src="/save-the-date.jpg"
-            alt="Watercolour of Jaipur palace — Amy & Aman"
-            className="h-full w-full object-cover"
-          />
+      <div className="mx-auto flex min-h-[100svh] max-w-[1600px] items-center px-6 pb-40 pt-28 md:px-12">
+        <div className="grid w-full grid-cols-1 items-start gap-10 md:grid-cols-2 md:gap-12">
+          {/* Text column */}
+          <motion.div style={{ y: textY }} className="order-1">
+            <h1 className="font-serif font-light leading-[0.86] tracking-tight text-ink">
+              <span className="reveal-mask">
+                <motion.span custom={0} variants={line} initial="hidden" animate="show" className="block text-[19vw] md:text-[11vw]">
+                  {COUPLE.bride}
+                </motion.span>
+              </span>
+              <span className="reveal-mask">
+                <motion.span custom={1} variants={line} initial="hidden" animate="show" className="block text-[13vw] italic text-clay md:text-[7vw]">
+                  &amp;
+                </motion.span>
+              </span>
+              <span className="reveal-mask">
+                <motion.span custom={2} variants={line} initial="hidden" animate="show" className="block text-[19vw] md:text-[11vw]">
+                  {COUPLE.groom}
+                </motion.span>
+              </span>
+            </h1>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.3, duration: 1 }}
+              className="mt-6 font-serif text-xl italic text-rose md:text-2xl"
+            >
+              are getting married!
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.4, duration: 1 }}
+              className="mt-8 max-w-md border-t border-ink/15 pt-6"
+            >
+              <p className="font-sans text-sm uppercase tracking-[0.25em] text-ink/80">
+                {COUPLE.location}
+              </p>
+              <p className="mt-1 font-serif text-2xl text-ink">{COUPLE.dates}</p>
+            </motion.div>
+          </motion.div>
+
+          {/* Square watercolor frame — aligned with Amy, shown on all versions */}
+          <motion.div style={{ y: imgY, scale }} className="order-2 w-full">
+            <div className="relative mx-auto aspect-square w-full max-w-[560px] overflow-hidden border border-ink/15 bg-ivory shadow-[0_1px_0_rgba(66,43,34,0.15)]">
+              <img
+                src="/save-the-date.jpg"
+                alt="Watercolour of Jaipur palace — Amy & Aman"
+                className="h-full w-full object-cover"
+              />
+            </div>
+          </motion.div>
         </div>
-      </motion.div>
-
-      {/* Text */}
-      <motion.div
-        style={{ y: textY }}
-        className="relative z-10 mx-auto flex min-h-[100svh] max-w-[1600px] flex-col justify-center px-6 pt-28 md:px-12"
-      >
-        <h1 className="font-serif font-light leading-[0.86] tracking-tight text-ink">
-          <span className="reveal-mask">
-            <motion.span custom={0} variants={line} initial="hidden" animate="show" className="block text-[19vw] md:text-[13vw]">
-              {COUPLE.bride}
-            </motion.span>
-          </span>
-          <span className="reveal-mask">
-            <motion.span custom={1} variants={line} initial="hidden" animate="show" className="block text-[13vw] italic text-clay md:text-[8vw]">
-              &amp;
-            </motion.span>
-          </span>
-          <span className="reveal-mask">
-            <motion.span custom={2} variants={line} initial="hidden" animate="show" className="block text-[19vw] md:text-[13vw]">
-              {COUPLE.groom}
-            </motion.span>
-          </span>
-        </h1>
-
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.3, duration: 1 }}
-          className="mt-6 font-serif text-xl italic text-rose md:text-2xl"
-        >
-          are getting married!
-        </motion.p>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.4, duration: 1 }}
-          className="mt-8 max-w-md border-t border-ink/15 pt-6"
-        >
-          <p className="font-sans text-sm uppercase tracking-[0.25em] text-ink/80">
-            {COUPLE.location}
-          </p>
-          <p className="mt-1 font-serif text-2xl text-ink">{COUPLE.dates}</p>
-        </motion.div>
-      </motion.div>
+      </div>
 
       {/* Countdown pinned to bottom edge */}
       <motion.div
