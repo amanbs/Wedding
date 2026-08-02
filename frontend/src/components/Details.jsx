@@ -30,26 +30,13 @@ export const Details = () => {
                   alt="Ornate green and gold palace door, Jaipur"
                   className="h-full w-full object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.04]"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-ink/40 to-transparent" />
-                <div className="absolute bottom-0 left-0 p-6">
-                  <p className="font-serif text-xl italic text-ivory">
-                    Where the Pink City meets forever.
-                  </p>
-                </div>
               </div>
             </Reveal>
           </div>
 
           {/* Copy + detail rows */}
           <div className="lg:col-span-7">
-            <Reveal delay={0.1}>
-              <h2 className="max-w-2xl font-serif text-4xl font-light leading-tight text-ink md:text-6xl">
-                Two days of celebration in the heart of the{" "}
-                <span className="italic text-rose">Pink City</span>.
-              </h2>
-            </Reveal>
-
-            <div className="mt-12 border-t border-ink/15">
+            <div className="border-t border-ink/15">
               {DETAILS.map((d, i) => (
                 <Reveal key={d.label} delay={i * 0.06}>
                   <div className="group grid grid-cols-1 gap-2 border-b border-ink/15 py-7 transition-colors duration-500 hover:bg-ivory sm:grid-cols-12 sm:items-baseline sm:gap-6 sm:px-4">
