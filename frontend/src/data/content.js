@@ -121,15 +121,15 @@ export const TRAVEL = [
     ],
   },
   {
-    title: "Where to stay",
+    title: "Accommodation",
     paras: [
-      "Narain Niwas Palace offers heritage rooms and suites for guests. A block of rooms has been arranged — mention Amy & Aman's wedding when booking.",
+      "We have arranged for full boarding accommodation at the Narain Niwas Palace for all our guests. More details about your stay for the two days will be shared once we receive your RSVP. It will be our pleasure to host you.",
     ],
   },
   {
     title: "Getting around",
     paras: [
-      "Taxis and pre-arranged cars are the easiest way to explore the Pink City. We'll coordinate shuttles between key events for our guests.",
+      "Uber taxis, tuk-tuks and pre-arranged cars are the easiest way to explore the Pink City.",
     ],
   },
 ];
