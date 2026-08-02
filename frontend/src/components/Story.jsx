@@ -49,6 +49,18 @@ export const Story = () => {
                         </p>
                       ))}
                     </div>
+                    {c.closing && (
+                      <div className="mt-8 max-w-xl space-y-4 bg-palace p-8 md:p-10">
+                        {c.closing.map((p, pi) => (
+                          <p
+                            key={pi}
+                            className="font-sans text-base font-semibold leading-relaxed text-ivory md:text-lg"
+                          >
+                            {p}
+                          </p>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 </Reveal>
               ))}
