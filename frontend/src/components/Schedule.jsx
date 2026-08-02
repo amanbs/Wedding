@@ -18,21 +18,33 @@ export const Schedule = () => {
           {SCHEDULE.map((day, di) => (
             <div key={day.day} className={di === 1 ? "lg:mt-24" : ""}>
               <Reveal>
-                <div className="mb-10 border-b border-ink/15 pb-6">
-                  <p className="font-sans text-xs uppercase tracking-[0.3em] text-clay">
-                    {day.day}
-                  </p>
-                  <h3 className="mt-2 font-serif text-4xl italic text-ink md:text-5xl">
-                    {day.date}
-                  </h3>
+                <div className="group relative mb-10 aspect-[16/10] overflow-hidden">
+                  <img
+                    src={day.image}
+                    alt={day.caption}
+                    className="h-full w-full object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.05]"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ink/55 via-ink/10 to-transparent" />
+                  <div className="absolute bottom-0 left-0 w-full p-6">
+                    <p className="font-sans text-[0.65rem] uppercase tracking-[0.3em] text-ivory/70">
+                      {day.day}
+                    </p>
+                    <h3 className="mt-1 font-serif text-4xl italic text-ivory md:text-5xl">
+                      {day.date}
+                    </h3>
+                  </div>
                 </div>
+              </Reveal>
+
+              <Reveal delay={0.05}>
+                <p className="mb-8 font-serif text-lg italic text-clay">{day.caption}</p>
               </Reveal>
 
               <div className="space-y-10">
                 {day.events.map((e, ei) => (
                   <Reveal key={e.title} delay={ei * 0.08}>
                     <div className="flex gap-8">
-                      <span className="w-20 shrink-0 pt-1 font-sans text-sm uppercase tracking-[0.15em] text-rose">
+                      <span className="w-24 shrink-0 pt-1 font-sans text-sm uppercase tracking-[0.15em] text-rose">
                         {e.time}
                       </span>
                       <div className="border-l border-ink/15 pl-8">
