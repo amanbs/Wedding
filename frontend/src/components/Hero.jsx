@@ -26,7 +26,7 @@ export const Hero = () => {
       <div className="mx-auto flex min-h-[100svh] max-w-[1600px] items-center px-6 pb-40 pt-28 md:px-12">
         <div className="grid w-full grid-cols-1 items-start gap-10 md:grid-cols-2 md:gap-12">
           {/* Text column */}
-          <motion.div style={{ y: textY }} className="order-1">
+          <motion.div style={{ y: textY }} className="order-2 md:order-1">
             <h1 className="font-serif font-light leading-[0.86] tracking-tight text-ink">
               <span className="reveal-mask">
                 <motion.span custom={0} variants={line} initial="hidden" animate="show" className="block text-[19vw] md:text-[11vw]">
@@ -68,7 +68,7 @@ export const Hero = () => {
           </motion.div>
 
           {/* Square watercolor frame — aligned with Amy, shown on all versions */}
-          <motion.div style={{ y: imgY, scale }} className="order-2 w-full">
+          <motion.div style={{ y: imgY, scale }} className="order-1 w-full md:order-2">
             <div className="relative mx-auto aspect-square w-full max-w-[560px] overflow-hidden border border-ink/15 bg-ivory shadow-[0_1px_0_rgba(66,43,34,0.15)]">
               <img
                 src="/save-the-date.jpg"
