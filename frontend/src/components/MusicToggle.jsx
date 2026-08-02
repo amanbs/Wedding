@@ -1,9 +1,10 @@
 import { useRef, useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Music, Pause } from "lucide-react";
+import { asset } from "../lib/asset";
 
 // Floating background music toggle.
-const TRACK = "/audio/background.mp3";
+const TRACK = asset("/audio/background.mp3");
 
 export const MusicToggle = () => {
   const audioRef = useRef(null);
