@@ -54,7 +54,7 @@ export const Story = () => {
                         {c.closing.map((p, pi) => (
                           <p
                             key={pi}
-                            className="font-sans text-base font-semibold leading-relaxed text-ivory md:text-lg"
+                            className="font-sans text-base font-light leading-relaxed text-ivory md:text-lg"
                           >
                             {p}
                           </p>
