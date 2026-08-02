@@ -8,7 +8,6 @@ const LINKS = [
   { label: "The Programme", id: "schedule" },
   { label: "Moments", id: "gallery" },
   { label: "Travel", id: "travel" },
-  { label: "Wishes", id: "wishes" },
 ];
 
 const scrollTo = (id) => {

@@ -13,7 +13,6 @@ import Schedule from "@/components/Schedule";
 import Gallery from "@/components/Gallery";
 import Travel from "@/components/Travel";
 import RSVP from "@/components/RSVP";
-import WellWishes from "@/components/WellWishes";
 import Footer from "@/components/Footer";
 
 function App() {
@@ -53,7 +52,6 @@ function App() {
         <Gallery />
         <Travel />
         <RSVP />
-        <WellWishes />
       </main>
       <Footer />
       <Toaster position="bottom-center" theme="light" />
