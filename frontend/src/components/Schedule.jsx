@@ -9,7 +9,7 @@ export const Schedule = () => {
           <div className="mb-16 flex items-center gap-4">
             <span className="h-px w-12 bg-rose" />
             <span className="font-sans text-xs uppercase tracking-[0.35em] text-rose">
-              The Schedule
+              THE PROGRAMME
             </span>
           </div>
         </Reveal>
