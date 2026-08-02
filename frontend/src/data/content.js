@@ -39,7 +39,7 @@ export const STORY = [
   {
     n: "01",
     label: "How It Began",
-    title: "Where all our worlds come together",
+    title: "A Match Lockdown-ed",
     paras: [
       "Our story began on what was arguably the worst possible day to meet someone, the very first day of the COVID lockdown.",
       "We were neighbours at the Cité Internationale Universitaire de Paris, both trying to survive the final stretch of our master's degrees.",
@@ -60,7 +60,7 @@ export const STORY = [
   {
     n: "03",
     label: "The Celebration",
-    title: "One Big Roof. A Thousand Stories.",
+    title: "Where all our worlds come together",
     paras: [
       "If you know Amy, you'll know there was never going to be any destination other than Jaipur for the wedding.",
       "If you know Aman...you'll know he couldn't care less. Luckily, celebrating in the city he grew up in turned out to be a pretty great compromise.",
