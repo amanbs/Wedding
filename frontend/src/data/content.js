@@ -83,7 +83,7 @@ export const SCHEDULE = [
     date: "December 17, 2026",
     events: [
       { time: "12:00 PM", title: "Haldi & Mehendi", note: "A brunch with henna, courtyard music and turmeric" },
-      { time: "7:00 PM", title: "Sangeet & Cocktails", note: "Dancing, performances and celebration under the stars" },
+      { time: "7:00 PM", title: "Sangeet & Cocktails", note: "A celebration Rajasthan-safari style" },
     ],
   },
   {
