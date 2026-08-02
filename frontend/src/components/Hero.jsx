@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { COUPLE, IMAGES } from "../data/content";
+import { COUPLE } from "../data/content";
 import Countdown from "./Countdown";
 
 const line = {
@@ -23,23 +23,17 @@ export const Hero = () => {
 
   return (
     <section ref={ref} className="relative min-h-[100svh] w-full overflow-hidden bg-ivory">
-      {/* Parallax arch image */}
+      {/* Parallax square watercolor frame */}
       <motion.div
         style={{ y: imgY, scale }}
-        className="absolute right-0 top-0 h-full w-full md:w-[46%]"
+        className="pointer-events-none absolute right-0 top-1/2 z-0 hidden -translate-y-1/2 pr-6 md:block md:w-[48%] lg:pr-12"
       >
-        <div
-          className="relative h-full w-full overflow-hidden"
-          style={{ borderRadius: "0 0 0 0", clipPath: "none" }}
-        >
-          <div className="absolute inset-0 md:m-6 md:rounded-t-[50%] overflow-hidden">
-            <img
-              src={IMAGES.heroPalace}
-              alt="Jaipur palace archway"
-              className="h-full w-full object-cover"
-            />
-            <div className="absolute inset-0 bg-ink/20" />
-          </div>
+        <div className="relative mx-auto aspect-square w-full max-w-[620px] overflow-hidden border border-ink/15 bg-ivory shadow-[0_1px_0_rgba(66,43,34,0.15)]">
+          <img
+            src="/save-the-date.jpg"
+            alt="Watercolour of Jaipur palace — Amy & Aman"
+            className="h-full w-full object-cover"
+          />
         </div>
       </motion.div>
 
