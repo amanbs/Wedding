@@ -6,9 +6,9 @@ import { Reveal } from "./motion/Reveal";
 const PHOTOS = [
   { src: "/moments/m2.jpg", span: "md:col-span-7", h: "h-[46vh] md:h-[62vh]" },
   { src: "/moments/m4.jpg", span: "md:col-span-5", h: "h-[46vh] md:h-[62vh]" },
-  { src: "/moments/m3.jpg", span: "md:col-span-5", h: "h-[44vh]" },
-  { src: "/moments/m1.jpg", span: "md:col-span-7", h: "h-[44vh]" },
-  { src: "/moments/m6.jpg", span: "md:col-span-12", h: "h-[44vh] md:h-[60vh]" },
+  { src: "/moments/m1.jpg", span: "md:col-span-5", h: "h-[44vh]" },
+  { src: "/moments/m6.jpg", span: "md:col-span-7", h: "h-[44vh]" },
+  { src: "/moments/m3.jpg", span: "md:col-span-12", h: "h-[44vh] md:h-[60vh]" },
 ];
 
 export const Gallery = () => {
