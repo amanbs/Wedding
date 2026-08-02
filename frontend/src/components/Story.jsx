@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { STORY, IMAGES } from "../data/content";
+import { STORY } from "../data/content";
 import { Reveal } from "./motion/Reveal";
 
 export const Story = () => {
@@ -60,8 +60,8 @@ export const Story = () => {
             <div className="relative h-[70vh] overflow-hidden md:sticky md:top-28">
               <motion.img
                 style={{ y: imgY, scale: 1.15 }}
-                src={IMAGES.storyCouple}
-                alt="Amy and Aman"
+                src="/story-couple.jpg"
+                alt="Amy and Aman — the proposal"
                 className="h-full w-full object-cover"
               />
               <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-ink/50 to-transparent p-6">
