@@ -35,6 +35,17 @@ export const Details = () => {
             </Reveal>
           ))}
         </div>
+
+        <Reveal delay={0.1}>
+          <div className="mt-16 max-w-3xl border-t border-ink/15 pt-10">
+            <p className="font-serif text-2xl font-light italic leading-relaxed text-ink/80 md:text-3xl">
+              A formal invitation, including the full programme and schedule for the celebrations, will follow soon.
+            </p>
+            <p className="mt-6 font-sans text-base font-light leading-relaxed text-ink/60 md:text-lg">
+              In the meantime, we'll keep updating this space with useful information, travel tips, and everything you need to know as we get closer to the big day.
+            </p>
+          </div>
+        </Reveal>
       </div>
     </section>
   );
