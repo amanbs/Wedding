@@ -89,7 +89,7 @@ export const Hero = () => {
       >
         <div className="mx-auto flex max-w-[1600px] flex-col items-start justify-between gap-4 px-6 py-6 md:flex-row md:items-center md:px-12">
           <span className="font-sans text-[0.65rem] uppercase tracking-[0.3em] text-clay">
-            The countdown to forever
+            The countdown
           </span>
           <Countdown />
         </div>
