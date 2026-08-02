@@ -39,7 +39,7 @@ export const STORY = [
   {
     n: "01",
     label: "How It Began",
-    title: "A Match Lockdown-ed",
+    title: "Where all our worlds come together",
     paras: [
       "Our story began on what was arguably the worst possible day to meet someone, the very first day of the COVID lockdown.",
       "We were neighbours at the Cité Internationale Universitaire de Paris, both trying to survive the final stretch of our master's degrees.",
