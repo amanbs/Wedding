@@ -48,15 +48,6 @@ export const Hero = () => {
         style={{ y: textY }}
         className="relative z-10 mx-auto flex min-h-[100svh] max-w-[1600px] flex-col justify-center px-6 pt-28 md:px-12"
       >
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.4, duration: 1 }}
-          className="mb-6 font-sans text-xs uppercase tracking-[0.4em] text-rose"
-        >
-          Together with their families
-        </motion.p>
-
         <h1 className="font-serif font-light leading-[0.86] tracking-tight text-ink">
           <span className="reveal-mask">
             <motion.span custom={0} variants={line} initial="hidden" animate="show" className="block text-[19vw] md:text-[13vw]">
@@ -79,7 +70,7 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.3, duration: 1 }}
-          className="mt-6 font-serif text-3xl italic text-rose md:text-4xl"
+          className="mt-6 font-serif text-xl italic text-rose md:text-2xl"
         >
           are getting married!
         </motion.p>

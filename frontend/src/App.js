@@ -7,7 +7,6 @@ import Grain from "@/components/Grain";
 import Nav from "@/components/Nav";
 import MusicToggle from "@/components/MusicToggle";
 import Hero from "@/components/Hero";
-import Marquee from "@/components/Marquee";
 import Story from "@/components/Story";
 import Details from "@/components/Details";
 import Schedule from "@/components/Schedule";
@@ -48,7 +47,6 @@ function App() {
       <MusicToggle />
       <main>
         <Hero />
-        <Marquee />
         <Story />
         <Details />
         <Schedule />
