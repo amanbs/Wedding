@@ -91,7 +91,7 @@ export const SCHEDULE = [
     date: "December 18, 2026",
     events: [
       { time: "10:00 AM", title: "Amy's send-off & Aman's Baraat", note: "The groom's procession arrives" },
-      { time: "6:30 PM", title: "The Ceremony", note: "Vows exchanged in the palace gardens" },
+      { time: "11:00 AM", title: "The Pheras", note: "Vows exchanged in the palace gardens" },
       { time: "8:00 PM", title: "Reception & Feast", note: "Toasts, music and the first dance" },
     ],
   },
