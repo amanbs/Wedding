@@ -57,9 +57,9 @@ export const Story = () => {
 
           {/* Editorial portrait */}
           <div className="md:col-span-5">
-            <div className="relative h-[70vh] overflow-hidden md:sticky md:top-28">
+            <div className="relative aspect-[3/2] overflow-hidden md:sticky md:top-28">
               <motion.img
-                style={{ y: imgY, scale: 1.15 }}
+                style={{ y: imgY, scale: 1.08 }}
                 src="/story-couple.jpg"
                 alt="Amy and Aman — the proposal"
                 className="h-full w-full object-cover"
