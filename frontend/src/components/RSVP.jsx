@@ -6,12 +6,6 @@ import { MaskLine } from "./motion/Reveal";
 export const RSVP = () => {
   return (
     <section id="rsvp" className="relative overflow-hidden bg-palace px-6 py-28 md:px-12 md:py-44">
-      {/* Vintage Jaipur State postage stamp — decorative */}
-      <img
-        src="/jaipur/jaipur-stamp.jpg"
-        alt="Vintage Jaipur State peacock postage stamp"
-        className="pointer-events-none absolute -right-4 top-10 z-0 w-24 -rotate-12 border-2 border-ivory opacity-90 shadow-[0_10px_30px_rgba(0,0,0,0.4)] md:right-12 md:top-16 md:w-32 lg:w-36"
-      />
       <div className="relative z-10 mx-auto max-w-[1600px] text-center">
         <motion.p
           initial={{ opacity: 0 }}
@@ -22,6 +16,17 @@ export const RSVP = () => {
         >
           Kindly Respond
         </motion.p>
+
+        {/* Vintage Jaipur State postage stamp — decorative */}
+        <motion.img
+          src="/jaipur/jaipur-stamp.jpg"
+          alt="Vintage Jaipur State peacock postage stamp"
+          initial={{ opacity: 0, y: 16, rotate: -8 }}
+          whileInView={{ opacity: 1, y: 0, rotate: -4 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+          className="pointer-events-none mx-auto mb-10 w-24 border-2 border-ivory shadow-[0_10px_30px_rgba(0,0,0,0.4)] md:w-28"
+        />
 
         <h2 className="font-serif font-light leading-[0.95] text-ivory">
           <MaskLine className="text-5xl md:text-8xl">We can't wait</MaskLine>
