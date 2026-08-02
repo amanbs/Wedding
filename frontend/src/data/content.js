@@ -103,19 +103,34 @@ export const SCHEDULE = [
 
 export const TRAVEL = [
   {
+    title: "Visas",
+    paras: [
+      "Citizens of many countries can apply for an Indian e-Visa online prior to their trip. Some visitors may still need to apply for a regular visa through an Indian embassy or consulate, as not all nationalities are eligible for an e-Visa.",
+      "To check visa requirement and procedure information, visit the following links depending on your nationality:",
+    ],
+    links: [
+      { label: "Official Government of India E-Visa Portal", url: "https://indianvisaonline.gov.in/evisa/tvoa.html" },
+      { label: "Embassy of India, Tunis — Visa Procedure & Fee Structure", url: "https://www.embassyofindiatunis.gov.in/visa-procedure-fee-structure.php" },
+    ],
+  },
+  {
     title: "Getting to Jaipur",
-    body:
-      "Jaipur International Airport (JAI) is well connected to Delhi, Mumbai and major hubs. From the airport, Narain Niwas is a comfortable 20-minute drive.",
+    paras: [
+      "Jaipur is well connected and easily accessible. Jaipur International Airport (JAI) has numerous flights connecting from Delhi, Mumbai, and other major Indian hubs. From the airport, Narain Niwas Palace is a comfortable 20-minute drive.",
+      "Jaipur is also easily accessible from New Delhi via the national highway (most recommended). A pre-booked taxi ride takes approximately 4 hours, and reliable Volvo bus services are also available.",
+    ],
   },
   {
     title: "Where to stay",
-    body:
+    paras: [
       "Narain Niwas Palace offers heritage rooms and suites for guests. A block of rooms has been arranged — mention Amy & Aman's wedding when booking.",
+    ],
   },
   {
     title: "Getting around",
-    body:
+    paras: [
       "Taxis and pre-arranged cars are the easiest way to explore the Pink City. We'll coordinate shuttles between key events for our guests.",
+    ],
   },
 ];
 

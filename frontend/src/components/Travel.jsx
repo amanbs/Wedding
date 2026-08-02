@@ -38,9 +38,35 @@ export const Travel = () => {
                 <Reveal key={t.title} delay={i * 0.08}>
                   <div className="border-b border-ink/15 pb-10">
                     <h3 className="font-serif text-3xl text-ink md:text-4xl">{t.title}</h3>
-                    <p className="mt-4 max-w-xl font-sans text-base font-light leading-relaxed text-ink/70">
-                      {t.body}
-                    </p>
+                    <div className="mt-4 max-w-xl space-y-3">
+                      {t.paras.map((p, pi) => (
+                        <p
+                          key={pi}
+                          className="font-sans text-base font-light leading-relaxed text-ink/70"
+                        >
+                          {p}
+                        </p>
+                      ))}
+                    </div>
+                    {t.links && (
+                      <ul className="mt-5 max-w-xl space-y-3">
+                        {t.links.map((l) => (
+                          <li key={l.url}>
+                            <a
+                              href={l.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="group inline-flex items-start gap-2 font-sans text-sm text-rose transition-colors hover:text-ink"
+                            >
+                              <span className="mt-1 h-px w-4 shrink-0 bg-rose transition-colors group-hover:bg-ink" />
+                              <span className="underline decoration-rose/40 underline-offset-4 group-hover:decoration-ink">
+                                {l.label}
+                              </span>
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                   </div>
                 </Reveal>
               ))}
