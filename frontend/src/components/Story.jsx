@@ -66,7 +66,7 @@ export const Story = () => {
               />
               <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-ink/50 to-transparent p-6">
                 <p className="font-serif text-xl italic text-ivory">
-                  "Choosing you, always."
+                  "Together is a beautiful place to be."
                 </p>
               </div>
             </div>
