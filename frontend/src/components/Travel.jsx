@@ -58,7 +58,6 @@ export const Travel = () => {
                               rel="noopener noreferrer"
                               className="group inline-flex items-start gap-2 font-sans text-sm text-rose transition-colors hover:text-ink"
                             >
-                              <span className="mt-1 h-px w-4 shrink-0 bg-rose transition-colors group-hover:bg-ink" />
                               <span className="underline decoration-rose/40 underline-offset-4 group-hover:decoration-ink">
                                 {l.label}
                               </span>
