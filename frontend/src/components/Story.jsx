@@ -32,13 +32,23 @@ export const Story = () => {
                   <div className="mb-16 last:mb-0">
                     <div className="flex items-baseline gap-6">
                       <span className="font-serif text-5xl text-clay/50 md:text-7xl">{c.n}</span>
-                      <h3 className="font-serif text-3xl italic text-ink md:text-5xl">
-                        {c.title}
-                      </h3>
+                      <span className="font-sans text-[0.65rem] uppercase tracking-[0.3em] text-rose">
+                        {c.label}
+                      </span>
                     </div>
-                    <p className="mt-5 max-w-xl font-sans text-base font-light leading-relaxed text-ink/75 md:text-lg">
-                      {c.body}
-                    </p>
+                    <h3 className="mt-4 font-serif text-3xl italic text-ink md:text-5xl">
+                      {c.title}
+                    </h3>
+                    <div className="mt-5 max-w-xl space-y-4">
+                      {c.paras.map((p, pi) => (
+                        <p
+                          key={pi}
+                          className="font-sans text-base font-light leading-relaxed text-ink/75 md:text-lg"
+                        >
+                          {p}
+                        </p>
+                      ))}
+                    </div>
                   </div>
                 </Reveal>
               ))}
