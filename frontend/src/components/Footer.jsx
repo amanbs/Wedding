@@ -2,7 +2,7 @@ import { COUPLE } from "../data/content";
 
 export const Footer = () => {
   return (
-    <footer className="relative bg-ink px-6 py-20 md:px-12 md:py-28">
+    <footer className="relative bg-palace px-6 py-20 md:px-12 md:py-28">
       <div className="mx-auto max-w-[1600px]">
         <div className="flex flex-col items-center text-center">
           <span className="font-serif text-6xl font-light text-ivory md:text-8xl">
@@ -23,7 +23,7 @@ export const Footer = () => {
         </div>
         <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-ivory/15 pt-8 md:flex-row">
           <p className="font-sans text-[0.65rem] uppercase tracking-[0.2em] text-ivory/40">
-            With love, from Jaipur
+            With love, from India
           </p>
           <p className="font-sans text-[0.65rem] uppercase tracking-[0.2em] text-ivory/40">
             Alok · Ritu · Anand · Abha · Avi
