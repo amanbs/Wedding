@@ -13,6 +13,14 @@ module.exports = {
         sm: 'calc(var(--radius) - 4px)'
       },
       colors: {
+        ivory: '#F7F5F0',
+        sand: '#EADDD7',
+        ink: '#1A1A1A',
+        umber: '#422B22',
+        clay: '#7A6A63',
+        rose: '#8B3A3A',
+        palace: '#1F3324',
+        champagne: '#D4C5B9',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {
@@ -55,6 +63,10 @@ module.exports = {
         }
       },
       keyframes: {
+        'marquee': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-50%)' }
+        },
         'accordion-down': {
           from: {
             height: '0'
@@ -73,8 +85,13 @@ module.exports = {
         }
       },
       animation: {
+        'marquee': 'marquee 40s linear infinite',
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out'
+      },
+      fontFamily: {
+        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+        sans: ['Outfit', 'ui-sans-serif', 'system-ui', 'sans-serif']
       }
     }
   },
