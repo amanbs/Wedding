@@ -32,7 +32,7 @@ export const RSVP = () => {
             and we hope you'll be there for this chapter
           </p>
           <p className="mt-5 font-sans text-xs uppercase tracking-[0.3em] text-ivory/60">
-            Please RSVP by September 24th, 2026
+            Please RSVP by August 24th, 2026
           </p>
         </motion.div>
 
