@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { asset } from "../lib/asset";
 import { ArrowUpRight } from "lucide-react";
 import { COUPLE } from "../data/content";
 
@@ -8,7 +9,7 @@ export const RSVP = () => {
       <div className="relative z-10 mx-auto max-w-[1600px] text-center">
         {/* Vintage Jaipur State postage stamp — decorative */}
         <motion.img
-          src="/jaipur/jaipur-stamp.jpg"
+          src={asset("/jaipur/jaipur-stamp.jpg")}
           alt="Vintage Jaipur State peacock postage stamp"
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}

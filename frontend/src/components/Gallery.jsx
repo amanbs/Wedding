@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { asset } from "../lib/asset";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
 import { Reveal } from "./motion/Reveal";
@@ -35,7 +36,7 @@ export const Gallery = () => {
                 className={`group relative w-full overflow-hidden ${p.h}`}
               >
                 <img
-                  src={p.src}
+                  src={asset(p.src)}
                   alt={`Wedding moment ${i + 1}`}
                   className="h-full w-full object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.06]"
                 />
@@ -68,7 +69,7 @@ export const Gallery = () => {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.92, opacity: 0 }}
               transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-              src={active}
+              src={asset(active)}
               alt="Selected moment"
               className="max-h-[85vh] max-w-full object-contain"
               onClick={(e) => e.stopPropagation()}

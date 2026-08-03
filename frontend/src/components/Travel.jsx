@@ -1,4 +1,5 @@
 import { TRAVEL, NOTES } from "../data/content";
+import { asset } from "../lib/asset";
 import { ExternalLink } from "lucide-react";
 import { Reveal } from "./motion/Reveal";
 
@@ -26,7 +27,7 @@ export const Travel = () => {
                   className="group relative block aspect-[4/3] overflow-hidden"
                 >
                   <img
-                    src="/jaipur/narain-facade.jpg"
+                    src={asset("/jaipur/narain-facade.jpg")}
                     alt="The facade of Narain Niwas Palace, Jaipur"
                     className="h-full w-full object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.04]"
                   />
@@ -51,7 +52,7 @@ export const Travel = () => {
                     className="group relative block aspect-[4/3] overflow-hidden"
                   >
                     <img
-                      src="/jaipur/narain-tea.jpg"
+                      src={asset("/jaipur/narain-tea.jpg")}
                       alt="Bar Palladio veranda at Narain Niwas Palace"
                       className="h-full w-full object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.05]"
                     />
@@ -63,7 +64,7 @@ export const Travel = () => {
                     className="group relative block aspect-[4/3] overflow-hidden"
                   >
                     <img
-                      src="/jaipur/narain-veranda.jpg"
+                      src={asset("/jaipur/narain-veranda.jpg")}
                       alt="Ivy-clad veranda at Narain Niwas Palace"
                       className="h-full w-full object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.05]"
                     />

@@ -1,4 +1,5 @@
 import { motion, useScroll, useTransform } from "framer-motion";
+import { asset } from "../lib/asset";
 import { useRef } from "react";
 import { STORY } from "../data/content";
 import { Reveal } from "./motion/Reveal";
@@ -73,7 +74,7 @@ export const Story = () => {
               <div className="relative aspect-[3/2] overflow-hidden">
                 <motion.img
                   style={{ y: imgY, scale: 1.08 }}
-                  src="/story-couple.jpg"
+                  src={asset("/story-couple.jpg")}
                   alt="Amy and Aman — the proposal"
                   className="h-full w-full object-cover"
                 />
@@ -87,7 +88,7 @@ export const Story = () => {
                 <Reveal>
                   <div className="relative aspect-[3/2] overflow-hidden">
                     <img
-                      src="/story-couple-2.jpg"
+                      src={asset("/story-couple-2.jpg")}
                       alt="Amy and Aman sharing a moment"
                       className="h-full w-full object-cover"
                     />
@@ -96,7 +97,7 @@ export const Story = () => {
                 <Reveal delay={0.1}>
                   <div className="relative aspect-[3/2] overflow-hidden">
                     <img
-                      src="/story-couple-3.jpg"
+                      src={asset("/story-couple-3.jpg")}
                       alt="Amy and Aman in the gardens"
                       className="h-full w-full object-cover"
                     />

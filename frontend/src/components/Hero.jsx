@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { asset } from "../lib/asset";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { COUPLE } from "../data/content";
 import Countdown from "./Countdown";
@@ -71,7 +72,7 @@ export const Hero = () => {
           <motion.div style={{ y: imgY, scale }} className="order-1 w-full md:order-2">
             <div className="relative mx-auto aspect-square w-full max-w-[560px] overflow-hidden border border-ink/15 bg-ivory shadow-[0_1px_0_rgba(66,43,34,0.15)]">
               <img
-                src="/save-the-date.jpg"
+                src={asset("/save-the-date.jpg")}
                 alt="Watercolour of Jaipur palace — Amy & Aman"
                 className="h-full w-full object-cover"
               />

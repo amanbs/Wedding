@@ -1,4 +1,5 @@
 import { SCHEDULE } from "../data/content";
+import { asset } from "../lib/asset";
 import { Reveal } from "./motion/Reveal";
 
 export const Schedule = () => {
@@ -20,7 +21,7 @@ export const Schedule = () => {
               <Reveal>
                 <div className="group relative mb-10 aspect-[16/10] overflow-hidden">
                   <img
-                    src={day.image}
+                    src={asset(day.image)}
                     alt={day.caption}
                     className="h-full w-full object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.05]"
                   />

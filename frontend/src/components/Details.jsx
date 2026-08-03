@@ -1,4 +1,5 @@
 import { DETAILS } from "../data/content";
+import { asset } from "../lib/asset";
 import { Reveal } from "./motion/Reveal";
 
 const ACCENTS = [
@@ -26,7 +27,7 @@ export const Details = () => {
             <Reveal>
               <div className="group relative aspect-[3/4] overflow-hidden lg:sticky lg:top-28">
                 <img
-                  src="/jaipur/jaipur-door.jpg"
+                  src={asset("/jaipur/jaipur-door.jpg")}
                   alt="Ornate green and gold palace door, Jaipur"
                   className="h-full w-full object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.04]"
                 />
@@ -75,7 +76,7 @@ export const Details = () => {
             <Reveal key={a.src} delay={i * 0.08}>
               <div className="group relative aspect-[4/5] overflow-hidden">
                 <img
-                  src={a.src}
+                  src={asset(a.src)}
                   alt={a.label}
                   className="h-full w-full object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.06]"
                 />
