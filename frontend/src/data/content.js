@@ -125,7 +125,7 @@ export const TRAVEL = [
   {
     title: "Accommodation",
     paras: [
-      "We have arranged for full boarding accommodation at the Narain Niwas Palace for all our guests. More details about your stay for the two days will be shared once we receive your RSVP. It will be our pleasure to host you.",
+      "We have arranged for full boarding accommodation *in Jaipur* for all our guests. More details about your stay for the two days will be shared once we receive your RSVP. It will be our pleasure to host you.",
     ],
   },
   {
